@@ -1,0 +1,21 @@
+.card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-image,.card-text {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-text {
+  transform: rotateY(180deg);
+}
