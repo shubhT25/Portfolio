@@ -1,7 +1,7 @@
 import React from "react";
 import "./cards.css";
-import CarRent from "../assets/portfolio/Car_Rental.jpg";
-import Drumkit from "../assets/portfolio/OIP.jfif";
+import WeCare from "../assets/portfolio/WeCare.jfif";
+import Matrix from "../assets/portfolio/OIP.jfif";
 import ReactPortfolio from "../assets/portfolio/React-portfolio.png";
 import Simon from "../assets/portfolio/Simon.jpg";
 import TMDB from "../assets/portfolio/TMDB.png";
@@ -11,12 +11,12 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      href: Drumkit,
+      href: Matrix,
       title: "Matrix",
       desp: "Solved a simple matrix problem for maximum sum.",
       tech: "HTML, CSS, JavaScript, React",
       demo: "#",
-      code: "#",
+      code: "https://github.com/shubhT25/Matrix-App",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const Portfolio = () => {
       desp: "Designed a web game to check the visual memory of the player.",
       tech: "HTML, CSS, JavaScript",
       demo: "#",
-      code: "#",
+      code: "https://github.com/shubhT25/SimonGame",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Portfolio = () => {
       desp: "Designed a basic tourist web app to travel popular destinations.",
       tech: "HTML, CSS, JavaScript, Node, JSON Server",
       demo: "#",
-      code: "#",
+      code: "https://github.com/shubhT25/WayFarFrontend",
     },
     {
       id: 4,
@@ -52,16 +52,16 @@ const Portfolio = () => {
       desp: "Created a single page TMDB clone website",
       tech: "HTML, CSS, JavaScript, React, Saas, Redux",
       demo: "#",
-      code: "#",
+      code: "https://github.com/shubhT25/TMBD",
     },
     {
       id: 6,
-      href: CarRent,
-      title: "Car Rental Website",
-      desp: "Created a Car Rental with backend and frontend(in development)",
-      tech: "HTML, CSS, JavaScript, React, Saas, Redux, Node, Express, Mongo",
+      href: WeCare,
+      title: "Hospitilty Management Website",
+      desp: "Created a Hospitilty Website with backend and frontend(in development)",
+      tech: "HTML, CSS, JavaScript, React, Redux, Node, Express, Mongo",
       demo: "#",
-      code: "#",
+      code: "https://github.com/shubhT25/WeCare-App",
     },
   ];
   return (

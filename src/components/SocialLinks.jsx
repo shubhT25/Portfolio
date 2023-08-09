@@ -14,7 +14,7 @@ const SocialLinks = () => {
           <FaLinkedin size={24} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "www.linkedin.com/in/shubham-tayade-359877287",
       style: "rounded-tr-md",
     },
     {
@@ -25,7 +25,7 @@ const SocialLinks = () => {
           <FaGithub size={24} />
         </>
       ),
-      href: "https://github.com",
+      href: "https://github.com/shubhT25",
     },
     {
       id: 3,
