@@ -42,7 +42,7 @@ const Portfolio = () => {
       title: "My Portfolio",
       desp: "Created my portfolio using frontend technologies.",
       tech: "HTML, CSS, JavaScript, React, TailwindCSS",
-      demo: "#",
+      demo: undefined,
       code: "https://github.com/shubhT25/Portfolio",
     },
     {
@@ -60,7 +60,7 @@ const Portfolio = () => {
       title: "Hospitilty Management Website",
       desp: "Created a Hospitilty Website with backend and frontend(in development)",
       tech: "HTML, CSS, JavaScript, React, Redux, Node, Express, Mongo",
-      demo: "#",
+      demo: undefined,
       code: "https://github.com/shubhT25/WeCare-App",
     },
   ];
@@ -77,45 +77,51 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-7 sm:px-0">
-          {portfolioItems.map(({ id, href, title, desp, tech, demo, code }) => (
-            <div
-              key={id}
-              className="shadow-md shadow-gray-600 rounded-lg w-[80%] mx-[10%] sm:w-[100%] sm:mx-0"
-            >
-              <div className="card bg-transparent h-[190px] sm:w-[100%] sm:h-[160px]">
-                <div className="card-inner relative text-center h-[100%]">
-                  <div className="card-image rounded-t-md absolute w-[100%] h-[100%]">
-                    <img
-                      src={href}
-                      alt={title}
-                      className="rounded-t-md w-[100%] h-[100%] sm:h-[180px]"
-                    />
-                  </div>
-                  <div className="card-text absolute bg-white text-gray-600 w-[100%] rounded-t-md h-[190px] sm:h-[180px]">
-                    <h1 className="text-xl text-black py-1">{title}</h1>
-                    <p className="px-10 sm:px-2 text-sm">{desp}</p>
-                    <br />
-                    <p className="px-10 sm:px-2 text-left text-sm">
-                      <strong>Techology used: </strong> {tech}
-                    </p>
-                    <br />
+          {portfolioItems.map(
+            ({ id, href, title, desp, tech, demo, code, disable }) => (
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg w-[80%] mx-[10%] sm:w-[100%] sm:mx-0"
+              >
+                <div className="card bg-transparent h-[190px] sm:w-[100%] sm:h-[160px]">
+                  <div className="card-inner relative text-center h-[100%]">
+                    <div className="card-image rounded-t-md absolute w-[100%] h-[100%]">
+                      <img
+                        src={href}
+                        alt={title}
+                        className="rounded-t-md w-[100%] h-[100%] sm:h-[180px]"
+                      />
+                    </div>
+                    <div className="card-text absolute bg-white text-gray-600 w-[100%] rounded-t-md h-[190px] sm:h-[180px]">
+                      <h1 className="text-xl text-black py-1">{title}</h1>
+                      <p className="px-10 sm:px-2 text-sm">{desp}</p>
+                      <br />
+                      <p className="px-10 sm:px-2 text-left text-sm">
+                        <strong>Techology used: </strong> {tech}
+                      </p>
+                      <br />
+                    </div>
                   </div>
                 </div>
+                <div className="flex items-center justify-center">
+                  {demo ? (
+                    <a href={demo} target="_blank" rel="noopener noreferrer">
+                      <button className="w-1/2 px-6 pt-3 m-4 duration-200 hover:scale-105">
+                        Demo
+                      </button>
+                    </a>
+                  ) : (
+                    <></>
+                  )}
+                  <a href={code} target="_blank" rel="noopener noreferrer">
+                    <button className="w-1/2 px-6 pt-3 m-4 duration-200 hover:scale-105">
+                      Code
+                    </button>
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center justify-center">
-                <a href={demo} target="_blank" rel="noopener noreferrer">
-                  <button className="w-1/2 px-6 pt-3 m-4 duration-200 hover:scale-105">
-                    Demo
-                  </button>
-                </a>
-                <a href={code} target="_blank" rel="noopener noreferrer">
-                  <button className="w-1/2 px-6 pt-3 m-4 duration-200 hover:scale-105">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </div>
