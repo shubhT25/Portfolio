@@ -108,7 +108,7 @@ const Portfolio = () => {
                     Demo
                   </button>
                 </a>
-                <a href={code}>
+                <a href={code} target="_blank" rel="noopener noreferrer">
                   <button className="w-1/2 px-6 pt-3 m-4 duration-200 hover:scale-105">
                     Code
                   </button>
