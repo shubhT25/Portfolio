@@ -14,7 +14,7 @@ const SocialLinks = () => {
           <FaLinkedin size={24} />
         </>
       ),
-      href: "www.linkedin.com/in/shubham-tayade-359877287",
+      href: "https://www.linkedin.com/in/shubham-tayade-359877287",
       style: "rounded-tr-md",
     },
     {
