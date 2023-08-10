@@ -55,7 +55,7 @@ const SocialLinks = () => {
           <BsFillPersonLinesFill size={24} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "/Shubham_Tayade_Resume.pdf",
       style: "rounded-br-md",
       download: true,
     },

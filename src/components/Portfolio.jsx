@@ -4,7 +4,7 @@ import WeCare from "../assets/portfolio/WeCare.jfif";
 import Matrix from "../assets/portfolio/OIP.jfif";
 import ReactPortfolio from "../assets/portfolio/React-portfolio.png";
 import Simon from "../assets/portfolio/Simon.jpg";
-import TMDB from "../assets/portfolio/TMDB.png";
+import TMDB from "../assets/portfolio/MovieDB.png";
 import Tourism from "../assets/portfolio/Tourism.png";
 
 const Portfolio = () => {
@@ -15,7 +15,7 @@ const Portfolio = () => {
       title: "Matrix",
       desp: "Solved a simple matrix problem for maximum sum.",
       tech: "HTML, CSS, JavaScript, React",
-      demo: "#",
+      demo: "https://basic-matrix-demo.netlify.app",
       code: "https://github.com/shubhT25/Matrix-App",
     },
     {
@@ -24,7 +24,7 @@ const Portfolio = () => {
       title: "Simon Game",
       desp: "Designed a web game to check the visual memory of the player.",
       tech: "HTML, CSS, JavaScript",
-      demo: "#",
+      demo: "https://simon-game-1997.netlify.app",
       code: "https://github.com/shubhT25/SimonGame",
     },
     {
@@ -33,7 +33,7 @@ const Portfolio = () => {
       title: "WayFar App",
       desp: "Designed a basic tourist web app to travel popular destinations.",
       tech: "HTML, CSS, JavaScript, Node, JSON Server",
-      demo: "#",
+      demo: "https://wayfar-1997.netlify.app",
       code: "https://github.com/shubhT25/WayFarFrontend",
     },
     {
@@ -43,7 +43,7 @@ const Portfolio = () => {
       desp: "Created my portfolio using frontend technologies.",
       tech: "HTML, CSS, JavaScript, React, TailwindCSS",
       demo: "#",
-      code: "#",
+      code: "https://github.com/shubhT25/Portfolio",
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ const Portfolio = () => {
       title: "TMDB Clone",
       desp: "Created a single page TMDB clone website",
       tech: "HTML, CSS, JavaScript, React, Saas, Redux",
-      demo: "#",
+      demo: "https://moviedb-1997.netlify.app",
       code: "https://github.com/shubhT25/TMBD",
     },
     {
